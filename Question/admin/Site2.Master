@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Question.admin.Site2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../css/All.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+#warp
+{
+	width:1000px;
+	margin:0 auto;
+    border:1px solid black;
+}
+#header
+{
+	width:1000px;
+	height:150px;
+    border:1px solid black;
+}
+#content
+{
+	width:1000px;
+    border:1px solid black;
+}
+#footer
+{
+	width:1000px;
+	height:80px;
+    border:1px solid black;
+}
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+          <div id="warp">
+    <div id="header">
+    <p>
+        <asp:Label ID="Label1" runat="server" Text="欢迎来到网站。"></asp:Label>
+        <asp:Button ID="btncancel" runat="server" Text="注销" onclick="btncancel_Click" />&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="管理用户" />
+        </p>
+    </div>
+    <div id="content" class="clearFix">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer"></div>
+    </div>
+
+    </div>
+    </form>
+</body>
+</html>
