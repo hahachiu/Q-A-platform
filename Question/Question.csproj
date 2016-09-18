@@ -64,6 +64,7 @@
     <Content Include="index.aspx" />
     <Content Include="admin\Site2.Master" />
     <Content Include="Site1.Master" />
+    <Content Include="README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
